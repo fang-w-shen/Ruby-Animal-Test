@@ -1,11 +1,11 @@
 class Animal
-    attr_accessor :name, :species, :speed, :legs
+    attr_accessor :name, :species, :legs, :speed
 
     def initialize(name=nil, species=nil)
         @name = name
         @species = species
-        @speed = 0
         @legs = 0
+        @speed = 0
     end
 
     # Sets the speed of the animal
@@ -24,13 +24,9 @@ class Animal
 end
 
 class Dog < Animal
-    attr_accessor :name, :species
+
     def initialize(name)
-       @name = name
-       @species = "Dog"
-       @legs = 4
-       @speed = 0
-       Animal.new(@name, @species)
+       super(name, "Dog")
     end
 # Sets the speed of the dog
     def walk

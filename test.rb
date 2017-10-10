@@ -7,6 +7,7 @@ class TestAnimal < Minitest::Test
     @animal = Animal.new("Cody","Dog")
     @animal.legs = 4
     @dog = Dog.new("Cody")
+    @dog.legs = 4
   end
 
   def test_success
