@@ -9,7 +9,8 @@ touch animals.rb
 ```
 
 1. Copy the contents of [animals.rb](./assets/animals.rb) into the file you just created.
-```class Animal
+```
+class Animal
     attr_accessor :name, :species, :speed, :legs
 
     def initialize(name=nil, species=nil)
@@ -44,7 +45,8 @@ class Dog < Animal
     def walk
         @speed = @speed + (0.2 * @legs)
     end
-end```
+end
+```
 
 ## Overview
 
